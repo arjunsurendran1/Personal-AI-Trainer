@@ -58,7 +58,7 @@ pTime = 0
 while True:
     succes , img = cap.read()
     img = cv2.resize(img,(1280,720))
-    #img = cv2.imread('/home/arjun/Documents/opencv/Advanced cv/projects/personal AI trainer/1.jpg')
+    #img = cv2.imread('/projects/personal AI trainer/1.jpg')
 
     img=detector.findPose(img,draw=False)
     lmList = detector.findPosition(img,draw=False)
